@@ -1,0 +1,22 @@
+**************************Find Maximum Valur from array in c*************************************
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int a[5]={23,32,54,21,54};
+ int i,max;
+ clrscr();
+  max=a[0];// initialise max from first element of array.
+  
+  for(i=0;i<5;i++)
+  {
+   if(max<a[i])
+   {
+    max = a[i]; 
+   }
+  }
+  
+  printf("\n maximum value=%d",max);
+  getch();
+}
